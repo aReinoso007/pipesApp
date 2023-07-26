@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 
 import { ButtonModule } from 'primeng/button';
-import { MenuModule } from 'primeng/menu';
 import { MenubarModule } from 'primeng/menubar';
 
 
@@ -9,7 +8,6 @@ import { MenubarModule } from 'primeng/menubar';
   declarations: [],
   exports:[
     ButtonModule,
-    MenuModule,
     MenubarModule
   ]
 })
