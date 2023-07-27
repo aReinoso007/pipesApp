@@ -16,9 +16,21 @@ export class MenuComponent implements OnInit{
         label: 'Pipes de Angular',
         icon: PrimeIcons.DESKTOP,
         items:[
-          {label: 'Textos y fechas', icon: PrimeIcons.ALIGN_LEFT},
-          {label: 'Numeros', icon: PrimeIcons.DOLLAR},
-          {label: 'No Comunes', icon: PrimeIcons.GLOBE}
+          {
+            label: 'Textos y fechas',
+            icon: PrimeIcons.ALIGN_LEFT,
+            routerLink:'/'
+          },
+          {
+            label: 'Numeros',
+            icon: PrimeIcons.DOLLAR,
+            routerLink: '/numbers'
+          },
+          {
+            label: 'No Comunes',
+            icon: PrimeIcons.GLOBE,
+            routerLink:'/uncommon'
+          }
         ]
     },
     {
