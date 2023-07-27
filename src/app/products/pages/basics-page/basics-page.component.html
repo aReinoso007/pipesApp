@@ -5,19 +5,66 @@
 </p-panel>
 
 <div class="grid">
-  <div class="col-4">
+  <div class="col-12 md:col-6">
     <p-card header="uppercase">
       {{ nameLower | uppercase }}
     </p-card>
   </div>
-  <div class="col-4">
+  <div class="col-12 md:col-6">
     <p-card header="lowercase">
       {{ nameUpper | lowercase }}
     </p-card>
   </div>
-  <div class="col-4">
+  <div class="col-12 md:col-6">
     <p-card header="titlecase">
       {{ fullName | titlecase}}
+    </p-card>
+  </div>
+  <div class="col-12 md:col-6">
+    <p-card header="titlecase">
+      {{ fullName | titlecase}}
+    </p-card>
+  </div>
+  <div class="col-12 md:col-6">
+    <p-card header="formats">
+      <ol>
+        <li>{{ customDate }}</li>
+        <li>Fecha pipe</li>
+        <li>Fecha pipe short</li>
+        <li>Fecha pipe medium</li>
+        <li>Fecha pipe long</li>
+        <li>Fecha pipe full</li>
+        <li>Fecha pipe shortDate</li>
+        <li>Fecha pipe mediumDate</li>
+        <li>Fecha pipe longDate</li>
+        <li>Fecha pipe fullDate</li>
+        <li>Fecha pipe shortTime</li>
+        <li>Fecha pipe mediumTime</li>
+        <li>Fecha pipe longTime</li>
+        <li>Fecha pipe fullTime</li>
+      </ol>
+    </p-card>
+  </div>
+  <div class="col-12 md:col-6">
+    <p-card header="Date">
+      <ol>
+        <li>Fecha: {{ customDate }}</li>
+        <li>Fecha pipe: {{ customDate | date}}</li>
+        <li>Fecha pipe short: {{ customDate | date:'short' }}</li>
+        <li>Fecha pipe medium: {{ customDate | date:'medium' }}</li>
+        <li>Fecha pipe long: {{ customDate | date:'long' }}</li>
+        <li>Fecha pipe full: {{ customDate | date:'full' }}</li>
+        <li>Fecha pipe shortDate: {{ customDate | date:'shortDate' }}</li>
+        <li>Fecha pipe mediumDate: {{ customDate | date:'mediumDate' }}</li>
+        <li>Fecha pipe longDate: {{ customDate | date:'longDate' }}</li>
+        <li>Fecha pipe fullDate: {{ customDate | date:'fullDate' }}</li>
+        <li>Fecha pipe shortTime: {{ customDate | date:'shortTime' }}</li>
+        <li>Fecha pipe mediumTime: {{ customDate | date:'mediumTime' }}</li>
+        <li>Fecha pipe longTime: {{ customDate | date:'longTime' }}</li>
+        <li>Fecha pipe fullTime: {{ customDate | date:'fullTime' }}</li>
+
+      </ol>
+
     </p-card>
   </div>
 </div>
