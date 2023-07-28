@@ -7,6 +7,12 @@ import { AppComponent } from './app.component';
 import { PrimeNgModule } from './prime-ng/prime-ng.module';
 import { SharedModule } from './shared/shared.module';
 
+//conf locale
+import localeEsEC from '@angular/common/locales/es-EC'
+import {registerLocaleData} from '@angular/common'
+
+registerLocaleData(localeEsEC);
+
 @NgModule({
   declarations: [
     AppComponent
