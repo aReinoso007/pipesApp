@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -9,9 +9,11 @@ import { SharedModule } from './shared/shared.module';
 
 //conf locale
 import localeEsEC from '@angular/common/locales/es-EC'
+import localeFrCA from '@angular/common/locales/fr-CA'
 import {registerLocaleData} from '@angular/common'
 
 registerLocaleData(localeEsEC);
+registerLocaleData(localeFrCA);
 
 @NgModule({
   declarations: [
@@ -24,7 +26,11 @@ registerLocaleData(localeEsEC);
     PrimeNgModule,
     SharedModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: LOCALE_ID, useValue: 'es-EC'
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
