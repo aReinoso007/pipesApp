@@ -31,37 +31,31 @@
         <li>{{ customDate }}</li>
         <li>Fecha pipe</li>
         <li>Fecha pipe short</li>
-        <li>Fecha pipe medium</li>
         <li>Fecha pipe long</li>
-        <li>Fecha pipe full</li>
-        <li>Fecha pipe shortDate</li>
-        <li>Fecha pipe mediumDate</li>
-        <li>Fecha pipe longDate</li>
-        <li>Fecha pipe fullDate</li>
-        <li>Fecha pipe shortTime</li>
-        <li>Fecha pipe mediumTime</li>
-        <li>Fecha pipe longTime</li>
-        <li>Fecha pipe fullTime</li>
+        <li>Fecha MES</li>
+        <li>MMMM dd, yyyy</li>
+      </ol>
+      <hr>
+      <ol>
+        <li>customDate | date:'long':'GMT-5'</li>
+        <li>customDate | date:'long':'GMT-6'</li>
       </ol>
     </p-card>
   </div>
   <div class="col-12 md:col-6">
     <p-card header="Date">
       <ol>
-        <li>Fecha: {{ customDate }}</li>
-        <li>Fecha pipe: {{ customDate | date}}</li>
-        <li>Fecha pipe short: {{ customDate | date:'short' }}</li>
-        <li>Fecha pipe medium: {{ customDate | date:'medium' }}</li>
-        <li>Fecha pipe long: {{ customDate | date:'long' }}</li>
-        <li>Fecha pipe full: {{ customDate | date:'full' }}</li>
-        <li>Fecha pipe shortDate: {{ customDate | date:'shortDate' }}</li>
-        <li>Fecha pipe mediumDate: {{ customDate | date:'mediumDate' }}</li>
-        <li>Fecha pipe longDate: {{ customDate | date:'longDate' }}</li>
-        <li>Fecha pipe fullDate: {{ customDate | date:'fullDate' }}</li>
-        <li>Fecha pipe shortTime: {{ customDate | date:'shortTime' }}</li>
-        <li>Fecha pipe mediumTime: {{ customDate | date:'mediumTime' }}</li>
-        <li>Fecha pipe longTime: {{ customDate | date:'longTime' }}</li>
-        <li>Fecha pipe fullTime: {{ customDate | date:'fullTime' }}</li>
+        <li>{{ customDate }}</li>
+        <li>{{ customDate | date}}</li>
+        <li>{{ customDate | date:'short' }}</li>
+        <li>{{ customDate | date:'long' }}</li>
+        <li>{{ customDate | date:'MMMM' }}</li>
+        <li>{{ customDate | date:'MMMM dd, yyyy' }}</li>
+      </ol>
+      <hr>
+      <ol>
+        <li>{{ customDate | date:'long':'GMT-5'}}</li>
+        <li>{{ customDate | date:'long':'GMT-6'}}</li>
       </ol>
 
     </p-card>
