@@ -11,11 +11,26 @@ export class UncommonPageComponent {
   public name: String = 'Alex';
   public gender: 'male' | 'female' = 'male';
   public invitationMap ={
-    'male':'invitarlo',
-    'female':'invitarla'
+    male:'invitarlo',
+    female:'invitarla'
   }
+
+
+
   changeClient(): void {
     this.name ="Sharon"
     this.gender = 'female';
   }
+
+  //i18Plural
+  public clients: string[] =[ 'Maria','Alex', 'Edisson','Sharon','Chifle','Tuno'];
+  public clientsMap = {
+    '=0':'no tenemos ningun cliente esperando',
+    '=1':'tenemos un cliente esperando',
+    'other':'tenemos # clientes esperando',
+  }
+  deleteClient(): void{
+    this.clients.shift();
+  }
+
 }
